@@ -1,3 +1,11 @@
-.head{
-    color:blue;
+.top{
+    background-color:lightblue;
+    padding:3rem;
+    text-align:center;
+}
+
+.body{
+    background-color:#EEB69E;
+    padding:3rem;
+    text-align:center;
 }
