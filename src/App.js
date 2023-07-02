@@ -9,12 +9,11 @@ import Navbar from './frontend/components/Navbar/Navbar.jsx';
 export default function App() {
   return (
     <Router>
-      <Navbar> 
+      <Navbar/>
         <Routes>
           <Route path="/about" element={<About/>}/>
           <Route path="/collection" element={<Collection/>}/>
         </Routes>
-      </Navbar>
    </Router>
   );
 }
