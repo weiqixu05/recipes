@@ -12,6 +12,9 @@ export default function Navbar () {
                 <Link to="/collection" className="nav-item">
                     <li>Collection</li>
                 </Link>
+                <Link to="/search" className="nav-item">
+                    <li>Search</li>
+                </Link>
             </ul>
         </nav>
     )
