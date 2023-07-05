@@ -5,9 +5,10 @@ import "../../styles.css";
 export default function Search(){
     async function fetchData(){
         try{
-            const data=((await fetch("https://api.edamam.com/api/recipes/v2?type=public&app_id=33eef802&app_key=8ebc6ae94cc66037076a9fd9c7e9c5fa")));
+            const data=((await fetch("https://api.edamam.com/api/recipes/v2?type=public&q=pizza&app_id=33eef802&app_key=8ebc6ae94cc66037076a9fd9c7e9c5fa")));
             console.log(data);
-            console.log(await data.json());
+            const response=await data.json();
+            console.log(response);
         } catch (error){
             console.log(error);
         }
