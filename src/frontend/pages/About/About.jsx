@@ -1,10 +1,11 @@
 import React from "react";
 import "./About.css";
+import "../../styles.css";
 
 export default function About(){
     return(
         <div>
-            <div className="top">
+            <div className="head">
                 <h1>
                     About
                 </h1>

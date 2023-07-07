@@ -1,10 +1,13 @@
 import React from "react";
 import "./Collection.css";
+import "../../styles.css"
 
 export default function Collection(){
     return(
         <div>
-            <h1 className="head">List of Recipes</h1>
+            <div className="head">
+                <h1>List of Recipes</h1>
+            </div>
         </div>
     )
 }

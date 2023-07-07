@@ -15,14 +15,14 @@ export default function Search(){
             //console.log(jsonData.count);
         } catch (error){
             console.log(error);
-        }
+        } 
     }
     fetchData();
     return(
         <div>
             <h1 className="h1">If you ran out of recipes....</h1>
             <p>
-                {recipeLink}
+                {}
             </p>
         </div>
     )
