@@ -26,5 +26,23 @@
 
 /*mobile*/
 .nav-mobile{
+    height:100vh;
+    width:33vw;
+    background-color:beige;
+    position:absolute;
+    text-align:center;
+}
+
+.nav-list-mobile{
+    list-style:none;
     display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+}
+
+.nav-item-mobile{
+    padding:1rem;
+    margin:auto;
+    text-decoration:none;
+    color:black;
 }
