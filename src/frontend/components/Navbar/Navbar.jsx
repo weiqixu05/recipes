@@ -1,10 +1,11 @@
 import "./Navbar.css";
-import React from "react";
+import React, {useState} from "react";
 import {Link} from "react-router-dom";
 
 export default function Navbar () {
+    const [isMobile, setIsMobile]=useState(false);
     return(
-        <nav className="navbar">
+        <nav className={isMobile?"nav-mobile":"navbar"}>
             <ul className="nav-list">
                 <Link to="/about" className="nav-item">
                     <li>About</li>

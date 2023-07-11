@@ -31,10 +31,13 @@ export default function Search(){
     fetchData(query, hitNumber);
     return(
         <div>
-            <h1 className="h1">If you ran out of recipes....</h1>
-            <p>
-                {recipeLink}
-            </p>
+            <div className="head">
+                <h1 className>If you ran out of recipes....</h1>
+            </div>
+            <div>
+                <p>
+                    {recipeLink}
+                </p>    
                 <button onClick={() =>{
                         query="dumplings";
                         fetchData(query, hitNumber);
@@ -43,7 +46,7 @@ export default function Search(){
                     Change recipe
                 </button>
                 <button onClick={()=>{
-                        query="";
+                        query="perogies";
                         max=20;
                         hitNumber=Math.floor(Math.random()*max);
                         //console.log(hitNumber);
@@ -52,6 +55,7 @@ export default function Search(){
                 >
                     Random Recipe
                 </button>
+            </div>
         </div>
     )
 }
