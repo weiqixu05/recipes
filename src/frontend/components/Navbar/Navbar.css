@@ -4,6 +4,7 @@
     background-color:beige;
     align-items:center;
     justify-content:flex-end;
+    border-color:orange;
 }
 
 .nav-list{
@@ -29,20 +30,36 @@
     height:100vh;
     width:33vw;
     background-color:beige;
-    position:absolute;
-    text-align:center;
+    position:fixed;
 }
 
 .nav-list-mobile{
     list-style:none;
     display:flex;
     flex-direction:column;
-    align-items:flex-start;
+    text-align:center;
+    padding:0;
 }
 
 .nav-item-mobile{
-    padding:1rem;
-    margin:auto;
     text-decoration:none;
-    color:black;
+    padding:1rem;
+    margin-bottom:0.5rem;
+}
+
+.nav-item-mobile:active{
+    background-color:orange;
+}
+
+.nav-button{
+    position:absolute;
+}
+
+.nothing{
+    visibility:hidden;
+}
+
+.nav-mobile-header{
+    height:3rem;
+    background-color:violet;
 }
