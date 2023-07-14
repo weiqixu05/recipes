@@ -1,0 +1,13 @@
+.recipe-body{
+    display:grid;
+    height:5rem;
+    grid-template-columns:1fr 1fr;
+}
+
+.recipe-text{
+    text-align:center;
+}
+
+.recipe-image{
+    text-align:center;
+}
