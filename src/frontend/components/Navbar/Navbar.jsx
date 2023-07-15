@@ -7,21 +7,21 @@ export default function Navbar () {
     const [isPressed, setIsPressed]=useState(false);
     return(
         <div>
-        {((isMobile&&isPressed)||(isDesktop))?(
-        <nav className={isMobile?"nav-mobile":"navbar"}>
-            <ul className={isMobile?"nav-list-mobile":"nav-list"}>
-                <Link to="/about" className={isMobile?"nav-item-mobile":"nav-item"}>
+        {((isMobile&&isPressed&&!isTablet)||(isDesktop||isTablet))?(
+        <nav className={isMobile&&!isTablet?"nav-mobile":"navbar"}>
+            <ul className={isMobile&&!isTablet?"nav-list-mobile":"nav-list"} onClick={()=>{setIsPressed(!isPressed)}}>
+                <Link to="/about" className={isMobile&&!isTablet?"nav-item-mobile":"nav-item"}>
                     <li>About</li>
                 </Link>
-                <Link to="/collection" className={isMobile?"nav-item-mobile":"nav-item"}>
+                <Link to="/collection" className={isMobile&&!isTablet?"nav-item-mobile":"nav-item"}>
                     <li>Collection</li>
                 </Link>
-                <Link to="/search" className={isMobile?"nav-item-mobile":"nav-item"}>
+                <Link to="/search" className={isMobile&&!isTablet?"nav-item-mobile":"nav-item"}>
                     <li>Search</li>
                 </Link>
             </ul>
         </nav>):(<div></div>)
-    }   {isMobile?
+    }   {isMobile&&!isTablet?
         (<div className="nav-mobile-header">
             <div className="nav-button">
                 <button onClick={()=>{setIsPressed(!isPressed);}}>
