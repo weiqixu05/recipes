@@ -6,8 +6,10 @@
 
 .recipe-text{
     text-align:center;
+    background:blue;
 }
 
 .recipe-image{
     text-align:center;
+    background:red;
 }
