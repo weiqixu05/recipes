@@ -4,13 +4,10 @@ import "../../styles.css";
 import {recipeData} from "../../modules/recipes.js";
 
 export default function Collection(){
-    const [imagePos, setImagePos]=useState('r');
-    const something=recipeData[0].name;
     return(
         <div>
             <div className="head">
                 <h1>List of Recipes</h1>
-                <h2>{something}</h2>
             </div>
             {
                 [...recipeData].map((recipe,i)=>{
