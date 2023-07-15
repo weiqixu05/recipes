@@ -14,16 +14,29 @@ export default function Collection(){
             </div>
             {
                 [...recipeData].map((recipe,i)=>{
-                    return(
-                    <div className="recipe-body" key={i}>
-                        <div className={i%2==0?"recipe-text":"recipe-image"}>
-                            <p>hello world</p>
+                    if(i%2==0){
+                        return(
+                        <div className="recipe-body" key={i}>
+                            <div className="recipe-text">
+                                <p>{recipe.name}</p>
+                            </div>
+                            <div className="recipe-image">
+                                <p>goodbye world</p>
+                            </div>
                         </div>
-                        <div className={i%2==0?"recipe-image":"recipe-text"}>
-                            <p>goodbye world</p>
-                        </div>
-                    </div>
-                    )
+                        )
+                    } else{
+                        return(
+                            <div className="recipe-body" key={i}>
+                                <div className="recipe-image">
+                                    <p>hello world</p>
+                                </div>
+                                <div className="recipe-text">
+                                    <p>{recipe.name}</p>
+                                </div>
+                            </div>
+                            )
+                        }
                     }
                 )
             }
