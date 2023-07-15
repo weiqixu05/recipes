@@ -6,7 +6,6 @@ import {recipeData} from "../../modules/recipes.js";
 export default function Collection(){
     const [imagePos, setImagePos]=useState('r');
     const something=recipeData[0].name;
-    const[i,setI]=useState(true);
     return(
         <div>
             <div className="head">
@@ -14,13 +13,13 @@ export default function Collection(){
                 <h2>{something}</h2>
             </div>
             {
-                [...recipeData].map(()=>{
+                [...recipeData].map((recipe,i)=>{
                     return(
-                    <div className="recipe-body">
-                        <div className={i==true?"recipe-text":"recipe-image"}>
+                    <div className="recipe-body" key={i}>
+                        <div className={i%2==0?"recipe-text":"recipe-image"}>
                             <p>hello world</p>
                         </div>
-                        <div className={i==true?"recipe-image":"recipe-text"}>
+                        <div className={i%2==0?"recipe-image":"recipe-text"}>
                             <p>goodbye world</p>
                         </div>
                     </div>
