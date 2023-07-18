@@ -1,6 +1,8 @@
+import image from "../../files/images/image.jpg";
+
 const recipeData=[
     {
-        //img= whatever imported
+        img: image,
         name:"dumplings",
         description:"chinese food",
         ingredients:["meat", "vegetables", "dough"],
@@ -20,7 +22,7 @@ const recipeData=[
         ]
     },
     {
-        //img= whatever imported
+        img: image,
         name:"burger",
         description:"american food",
         ingredients:["meat", "vegetables", "bun", "condiments"],

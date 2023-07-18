@@ -12,4 +12,5 @@
 .recipe-image{
     text-align:center;
     background:red;
+    object-fit:fill;
 }

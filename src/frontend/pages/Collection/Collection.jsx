@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 import "./Collection.css";
 import "../../styles.css";
 import {recipeData} from "../../modules/recipes.js";
@@ -18,7 +18,7 @@ export default function Collection(){
                                 <p>{recipe.name}</p>
                             </div>
                             <div className="recipe-image">
-                                <p>goodbye world</p>
+                                <img src={recipe.img}/>
                             </div>
                         </div>
                         )
@@ -26,7 +26,7 @@ export default function Collection(){
                         return(
                             <div className="recipe-body" key={i}>
                                 <div className="recipe-image">
-                                    <p>hello world</p>
+                                    <img src={recipe.img}/>
                                 </div>
                                 <div className="recipe-text">
                                     <p>{recipe.name}</p>
