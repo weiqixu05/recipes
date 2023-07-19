@@ -53,7 +53,7 @@ export default function Collection(){
                                     <summary>Ingredients</summary>
                                 </details>
                                 <details>
-                                    {[...recipe.steps].map((step,j)=>{
+                                    {[...recipe.steps[0]].map((step,j)=>{
                                         return(
                                             //have to fix this as no show
                                             <div key={j}>
