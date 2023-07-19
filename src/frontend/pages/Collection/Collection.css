@@ -1,16 +1,27 @@
 .recipe-body{
     display:grid;
-    height:5rem;
     grid-template-columns:1fr 1fr;
 }
 
 .recipe-text{
     text-align:center;
     background:blue;
+    height:20rem;
+}
+
+.recipe-image-box{
+    text-align:center;
+    background:red;
+    height:20rem;
+    background-size:contain;
 }
 
 .recipe-image{
-    text-align:center;
-    background:red;
-    object-fit:fill;
+    max-height:100%;
+}
+
+/*mobile*/
+.recipe-body-mobile{
+    display:grid;
+    grid-template-columns:1fr;
 }
