@@ -6,19 +6,15 @@ const recipeData=[
         name:"dumplings",
         description:"chinese food",
         ingredients:["meat", "vegetables", "dough"],
-        nutrition: [
-            {
-                calories:"100",
-                carbs:"5g",
-                protein:"1g"
-            }
+        nutrition:[
+            "calories: 100g",
+            "carbs: 30g",
+            "protein: 5g"
         ],
         steps:[
-            {
-                1:"something",
-                2:"something",
-                3:"something"
-            }
+            "something",
+            "something",
+            "something"
         ]
     },
     {
@@ -26,19 +22,15 @@ const recipeData=[
         name:"burger",
         description:"american food",
         ingredients:["meat", "vegetables", "bun", "condiments"],
-        nutrition: [
-            {
-                calories:"1000",
-                carbs:"50g",
-                protein:"10g"
-            }
+        nutrition:[
+            "calories: 100g",
+            "carbs: 30g",
+            "protein: 5g"
         ],
         steps:[
-            {
-                1:"step",
-                2:"step",
-                3:"step"
-            }
+            "something",
+            "something",
+            "something"
         ]
     }
 ]

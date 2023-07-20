@@ -41,19 +41,19 @@ export default function Collection(){
                 [...recipeData].map((recipe,i)=>{
                         return(
                         <div className="recipe-body-mobile" key={i}>
-                            <div className="recipe-text">
+                            <div className="recipe-text-mobile">
                                 <h2>{recipe.name}</h2>
                                 <p>{recipe.description}</p>
                                 <details>
-                                    <ol>
+                                    <ul>
                                         {[...recipe.ingredients].map((ingredient,j)=>{
                                             return(<div key={j}><li>{ingredient}</li></div>)
                                         })}
-                                    </ol>
+                                    </ul>
                                     <summary>Ingredients</summary>
                                 </details>
                                 <details>
-                                    {[...recipe.steps[0]].map((step,j)=>{
+                                    {[...recipe.steps].map((step,j)=>{
                                         return(
                                             //have to fix this as no show
                                             <div key={j}>
@@ -66,8 +66,20 @@ export default function Collection(){
                                     })}
                                     <summary>Steps</summary>
                                 </details>
+                                <details>
+                                    {[...recipe.nutrition].map((nutrient, j)=>{
+                                        return(
+                                            <div key={j}>
+                                                <ul>
+                                                    {nutrient}
+                                                </ul>
+                                            </div>
+                                        )
+                                    })}
+                                    <summary>Nutrition Facts</summary>
+                                </details>
                             </div>
-                            <div className="recipe-image-box">
+                            <div className="recipe-image-box-mobile">
                                 <img className="recipe-image" src={recipe.img}/>
                             </div>
                         </div>

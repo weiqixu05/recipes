@@ -5,14 +5,16 @@
 
 .recipe-text{
     text-align:center;
-    background:blue;
-    height:20rem;
+    background:#EEB69E;
+    min-height:20rem;
+    overflow:hidden;
 }
 
 .recipe-image-box{
     text-align:center;
     background:red;
-    height:20rem;
+    min-height:20rem;
+    overflow:hidden;
     background-size:contain;
 }
 
@@ -24,4 +26,40 @@
 .recipe-body-mobile{
     display:grid;
     grid-template-columns:1fr;
+}
+
+.recipe-text-mobile{
+    text-align:center;
+    background:#EEB69E;
+    min-height:20rem;
+    overflow:hidden;
+    align-items:center;
+}
+
+.recipe-image-box-mobile{
+    text-align:center;
+    background:red;
+    min-height:20rem;
+    overflow:hidden;
+    background-size:contain;
+}
+
+.recipe-list-mobile{
+    list-style:none;
+    border:1px solid yellow;
+    margin:auto;
+    width:100%;
+    text-align:center;
+}
+
+.recipe-list-item-mobile{
+    text-align:center;
+    border:1px solid black;
+    width:100%;
+}
+
+.recipe-dropdown-mobile{
+    width:80%;
+    margin:auto;
+    border:1px solid green;
 }
