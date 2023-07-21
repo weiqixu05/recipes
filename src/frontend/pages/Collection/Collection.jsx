@@ -44,20 +44,18 @@ export default function Collection(){
                             <div className="recipe-text-mobile">
                                 <h2>{recipe.name}</h2>
                                 <p>{recipe.description}</p>
-                                <details>
-                                    <ul>
+                                <details className="recipe-dropdown-mobile">
                                         {[...recipe.ingredients].map((ingredient,j)=>{
-                                            return(<div key={j}><li>{ingredient}</li></div>)
+                                            return(<div key={j} className="recipe-list-item-mobile">{ingredient}</div>)
                                         })}
-                                    </ul>
                                     <summary>Ingredients</summary>
                                 </details>
-                                <details>
+                                <details className="recipe-dropdown-mobile">
                                     {[...recipe.steps].map((step,j)=>{
                                         return(
                                             //have to fix this as no show
                                             <div key={j}>
-                                                <details>
+                                                <details className="recipe-second-drop-mobile">
                                                     {step}
                                                     <summary>Step {j}</summary>
                                                 </details>
@@ -66,13 +64,11 @@ export default function Collection(){
                                     })}
                                     <summary>Steps</summary>
                                 </details>
-                                <details>
+                                <details className="recipe-dropdown-mobile">
                                     {[...recipe.nutrition].map((nutrient, j)=>{
                                         return(
-                                            <div key={j}>
-                                                <ul>
-                                                    {nutrient}
-                                                </ul>
+                                            <div key={j} className="recipe-second-drop-mobile">
+                                                {nutrient}
                                             </div>
                                         )
                                     })}

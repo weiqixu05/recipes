@@ -15,11 +15,12 @@
     background:red;
     min-height:20rem;
     overflow:hidden;
-    background-size:contain;
 }
 
 .recipe-image{
     max-height:100%;
+    max-width:100%;
+    width:auto;
 }
 
 /*mobile*/
@@ -55,11 +56,19 @@
 .recipe-list-item-mobile{
     text-align:center;
     border:1px solid black;
-    width:100%;
+}
+
+.recipe-second-drop-mobile{
+    width:95%;
+    margin-right:0;
+    margin-left:auto;
+    text-align:left;
+    border:1px solid black;
 }
 
 .recipe-dropdown-mobile{
     width:80%;
     margin:auto;
     border:1px solid green;
+    text-align:left;
 }
