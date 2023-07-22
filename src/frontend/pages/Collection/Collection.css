@@ -1,26 +1,58 @@
 .recipe-body{
     display:grid;
-    grid-template-columns:1fr 1fr;
+    grid-template-columns:repeat(2,50vw);
 }
 
 .recipe-text{
     text-align:center;
     background:#EEB69E;
-    min-height:20rem;
-    overflow:hidden;
+    /*overflow:hidden;*/
 }
 
 .recipe-image-box{
     text-align:center;
-    background:red;
-    min-height:20rem;
-    overflow:hidden;
+    background:#9EEEB6;
+    display:grid;
+    grid-template-columns:1 100vw;
+    place-items:center;
+    padding-top:0.5rem;
+    padding-bottom:0.5rem;
+    /*overflow:hidden;*/
 }
 
 .recipe-image{
-    max-height:100%;
-    max-width:100%;
-    width:auto;
+    width:90%;
+    height:auto;
+    justify-self:center;
+    border-radius:10%;
+}
+
+/*.recipe-list{
+    list-style:none;
+    border:1px solid yellow;
+    margin:auto;
+    width:100%;
+    text-align:center;
+}*/
+
+.recipe-list-item{
+    text-align:center;
+    border:1px solid black;
+}
+
+.recipe-second-drop{
+    width:95%;
+    margin-right:0;
+    margin-left:auto;
+    text-align:left;
+    border:1px solid black;
+}
+
+.recipe-dropdown{
+    width:80%;
+    margin:auto;
+    border:1px solid green;
+    text-align:left;
 }
 
 /*mobile*/

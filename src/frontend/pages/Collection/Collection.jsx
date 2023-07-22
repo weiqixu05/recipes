@@ -10,34 +10,98 @@ export default function Collection(){
             <div className="head">
                 <h1>List of Recipes</h1>
             </div>
-            {/*isDesktop||*/isTablet?(
+            {isDesktop||isTablet?(
                 [...recipeData].map((recipe,i)=>{
                     if(i%2==0){
                         return(
                         <div className="recipe-body" key={i}>
                             <div className="recipe-text">
-                                <p>{recipe.name}</p>
+                                <h2 className="align-left">{recipe.name}</h2>
+                                <p className="align-left">{recipe.description}</p>
+                                <details className="recipe-dropdown">
+                                    <summary>Ingredients</summary>
+                                    <ul>
+                                    {[...recipe.ingredients].map((ingredient,j)=>{
+                                        return(<li key={j}>{ingredient}</li>)
+                                    })}
+                                    </ul>
+                                </details>
+                                <details className="recipe-dropdown">
+                                    {[...recipe.steps].map((step,j)=>{
+                                        return(
+                                            <div key={j}>
+                                                <details className="recipe-second-drop">
+                                                    {step}
+                                                    <summary>Step {j}</summary>
+                                                </details>
+                                            </div>
+                                        )
+                                    })}
+                                    <summary>Steps</summary>
+                                </details>
+                                <details className="recipe-dropdown">
+                                    {[...recipe.nutrition].map((nutrient, j)=>{
+                                        return(
+                                            <div key={j} className="recipe-second-drop">
+                                                {nutrient}
+                                            </div>
+                                        )
+                                    })}
+                                    <summary>Nutrition Facts</summary>
+                                </details>
                             </div>
                             <div className="recipe-image-box">
                                 <img className="recipe-image" src={recipe.img}/>
                             </div>
                         </div>
                         )
-                    } else{
+                    } else{ 
                         return(
                             <div className="recipe-body" key={i}>
                                 <div className="recipe-image-box">
                                     <img className="recipe-image" src={recipe.img}/>
                                 </div>
                                 <div className="recipe-text">
-                                    <p>{recipe.name}</p>
+                                    <h2 className="align-right">{recipe.name}</h2>
+                                    <p className="align-right">{recipe.description}</p>
+                                    <details className="recipe-dropdown">
+                                        <ul>
+                                        {[...recipe.ingredients].map((ingredient,j)=>{
+                                            return(<li key={j}>{ingredient}</li>)
+                                        })}
+                                        </ul>
+                                    <summary>Ingredients</summary>
+                                </details>
+                                <details className="recipe-dropdown">
+                                    {[...recipe.steps].map((step,j)=>{
+                                        return(
+                                            <div key={j}>
+                                                <details className="recipe-second-drop">
+                                                    {step}
+                                                    <summary>Step {j}</summary>
+                                                </details>
+                                            </div>
+                                        )
+                                    })}
+                                    <summary>Steps</summary>
+                                </details>
+                                <details className="recipe-dropdown">
+                                    {[...recipe.nutrition].map((nutrient, j)=>{
+                                        return(
+                                            <div key={j} className="recipe-second-drop">
+                                                {nutrient}
+                                            </div>
+                                        )
+                                    })}
+                                    <summary>Nutrition Facts</summary>
+                                </details>
                                 </div>
                             </div>
                             )
                         }
                     }
                 )
-            ):(
+            ):( //mobile
                 [...recipeData].map((recipe,i)=>{
                         return(
                         <div className="recipe-body-mobile" key={i}>
@@ -53,7 +117,6 @@ export default function Collection(){
                                 <details className="recipe-dropdown-mobile">
                                     {[...recipe.steps].map((step,j)=>{
                                         return(
-                                            //have to fix this as no show
                                             <div key={j}>
                                                 <details className="recipe-second-drop-mobile">
                                                     {step}

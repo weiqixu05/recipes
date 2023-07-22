@@ -14,7 +14,7 @@ export default function Search(){
         try{
             const response=((await fetch("https://api.edamam.com/api/recipes/v2?type=public&q="+query+"&app_id=33eef802&app_key=8ebc6ae94cc66037076a9fd9c7e9c5fa")));
             const data=await response.json();
-            console.log(hitNumber);
+            //console.log(hitNumber);
             if((hitNumber>data.count-1)&&data.count!=0){
                 hitNumber=data.count-1;
             } else if(data.count==0){
