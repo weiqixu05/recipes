@@ -37,7 +37,7 @@
 
 .recipe-list-item{
     text-align:center;
-    border:1px solid black;
+    /*border:1px solid black;*/
 }
 
 .recipe-second-drop{
@@ -45,13 +45,13 @@
     margin-right:0;
     margin-left:auto;
     text-align:left;
-    border:1px solid black;
+    /*border:1px solid black;*/
 }
 
 .recipe-dropdown{
     width:80%;
     margin:auto;
-    border:1px solid green;
+    /*(border:1px solid green;*/
     text-align:left;
 }
 
@@ -79,7 +79,7 @@
 
 .recipe-list-mobile{
     list-style:none;
-    border:1px solid yellow;
+    /*border:1px solid yellow;*/
     margin:auto;
     width:100%;
     text-align:center;
@@ -87,7 +87,7 @@
 
 .recipe-list-item-mobile{
     text-align:center;
-    border:1px solid black;
+    /*border:1px solid black;*/
 }
 
 .recipe-second-drop-mobile{
@@ -95,12 +95,19 @@
     margin-right:0;
     margin-left:auto;
     text-align:left;
-    border:1px solid black;
+    /*border:1px solid black;*/
 }
 
 .recipe-dropdown-mobile{
     width:80%;
-    margin:auto;
-    border:1px solid green;
+    /*border:1px solid green;*/
     text-align:left;
+    background-color:grey;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:0.5rem;
+    margin-bottom:0.5rem;
+    border-radius:5%;
+    padding-left:0.5rem;
+    padding-right:0.5rem;
 }
