@@ -24,7 +24,7 @@ export default function Navbar () {
     }   {isMobile&&!isTablet?
         (<div className="nav-mobile-header">
             <div className="nav-button">
-                <button onClick={()=>{setIsPressed(!isPressed);}}>
+                <button className="style-none" onClick={()=>{setIsPressed(!isPressed);}}>
                     {(isPressed?<div>X</div>:<div>☰</div>)}
                 </button>
             </div>
