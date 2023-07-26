@@ -44,7 +44,7 @@
 .nav-item-mobile{
     text-decoration:none;
     padding:1rem;
-    margin-bottom:0.5rem;
+    margin-top:0.5rem;
 }
 
 .nav-item-mobile:active{
@@ -53,6 +53,8 @@
 
 .nav-button{
     position:absolute;
+    padding-top:0.7rem;
+    padding-left:1rem;
 }
 
 .nothing{
