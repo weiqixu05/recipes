@@ -21,10 +21,12 @@
 }
 
 .recipe-image{
-    width:90%;
+    width:80%;
     height:auto;
     justify-self:center;
     border-radius:10%;
+    margin-top:1rem;
+    margin-bottom:1rem;
 }
 
 /*.recipe-list{
