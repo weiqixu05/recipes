@@ -45,8 +45,10 @@ export default function Search(){
                 >
                     Change recipe
                 </button>
+                {/*update this part for user input using form*/}
+                <input name="search" id="search" type="text"/>
                 <button onClick={()=>{
-                        query="perogies";
+                        query=document.getElementById('search').value;
                         max=20;
                         hitNumber=Math.floor(Math.random()*max);
                         //console.log(hitNumber);
