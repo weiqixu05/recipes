@@ -4,7 +4,7 @@ import "../../styles.css";
 import {useState} from "react";
 
 export default function Search(){
-    const [query, setQuery]=useState("pizza");
+    //const [query, setQuery]=useState("pizza");
     const [recipeLink, setRecipeLink]=useState("");
     const [hitNumber, setHitNumber]=useState(3);
     async function fetchData(query){
@@ -41,9 +41,9 @@ export default function Search(){
                 {/*update this part for user input using form*/}
                 <input name="search" id="search" type="text"/>
                 <button onClick={()=>{
-                        setQuery(document.getElementById('search').value);
+                        //setQuery(document.getElementById('search').value);
                         //console.log(query);
-                        fetchData(query);
+                        fetchData(document.getElementById('search').value);
                     }}
                 >
                     Random Recipe
