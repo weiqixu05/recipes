@@ -20,7 +20,7 @@ export default function Search(){
                 console.log(hitNumber);
                 setRecipeLink(data.hits[hitNumber].recipe.url);
             } else if(data.count==0){
-                setRecipeLink("No Recipes Found for\"" + query + "\"");
+                setRecipeLink("No Recipes Found for \"" + query + "\"");
             }
             //console.log(hitNumber);
             //console.log(query);
