@@ -40,14 +40,16 @@ export default function Search(){
                 </p>    
                 {/*update this part for user input using form*/}
                 <input name="search" id="search" type="text"/>
-                <button onClick={()=>{
+                <div>
+                    <button onClick={()=>{
                         //setQuery(document.getElementById('search').value);
                         //console.log(query);
                         fetchData(document.getElementById('search').value);
                     }}
-                >
+                    >
                     Random Recipe
-                </button>
+                    </button>
+                </div>
             </div>
         </div>
     )
